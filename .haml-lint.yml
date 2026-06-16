@@ -2,7 +2,7 @@ exclude:
   - vendor/bundle/**/*
 linters:
   ConsecutiveSilentScripts:
-    exclude: spec/components/**/*
+    exclude: test/components/**/*
   LineLength:
     max: 160
   SpaceInsideHashAttributes:

@@ -34,7 +34,7 @@ Layout/LineLength:
     - '^\s*# '
   Exclude:
     - config/initializers/new_framework_defaults_7_0.rb
-    - spec/components/previews/**/*
+    - test/components/previews/**/*
 
 Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
@@ -54,13 +54,13 @@ Metrics/BlockLength:
     - config/environments/*
     - config/routes.rb
     - spec/**/*_spec.rb
-    - spec/components/previews/**/*
+    - test/components/previews/**/*
     - spec/support/*_shared_examples.rb
 
 Metrics/MethodLength:
   Exclude:
     - db/migrate/*.rb
-    - spec/components/previews/**/*
+    - test/components/previews/**/*
 
 RSpec/ExampleLength:
   Exclude:
