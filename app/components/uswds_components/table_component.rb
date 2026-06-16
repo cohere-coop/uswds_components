@@ -5,7 +5,7 @@ module UswdsComponents
 
     def initialize(id: nil, striped: false, borderless: false, stacked: false,
       stacked_header: false)
-      super
+      super()
       @id = id
       @striped = striped
       @borderless = borderless

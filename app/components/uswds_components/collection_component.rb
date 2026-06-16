@@ -8,7 +8,7 @@ module UswdsComponents
       renders_one :header
 
       def initialize(href: nil, datetime: nil)
-        super
+        super()
         @datetime = datetime
         @href = href
 

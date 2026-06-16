@@ -4,7 +4,7 @@ module UswdsComponents
       attr_accessor :url, :index, :current, :last
 
       def initialize(url:, index:, current: false, last: false)
-        super
+        super()
         @url = url
         @index = index
         @current = current
@@ -24,7 +24,7 @@ module UswdsComponents
       attr_accessor :url
 
       def initialize(url:)
-        super
+        super()
         @url = url
       end
     end
@@ -33,7 +33,7 @@ module UswdsComponents
       attr_accessor :url
 
       def initialize(url:)
-        super
+        super()
         @url = url
       end
     end

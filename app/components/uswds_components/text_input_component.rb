@@ -7,7 +7,7 @@ module UswdsComponents
 
     def initialize(form:, attribute:, input_options: {}, success: false,
       hint: '')
-      super
+      super()
       @form = form
       @attribute = attribute
       @input_options = input_options

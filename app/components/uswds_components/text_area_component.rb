@@ -5,7 +5,7 @@ module UswdsComponents
     delegate :present?, to: :errors, prefix: true
 
     def initialize(form:, attribute:, input_options: {})
-      super
+      super()
       @form = form
       @attribute = attribute
       @input_options = input_options

@@ -8,7 +8,7 @@ module UswdsComponents
       renders_many :items, Item
 
       def initialize(href:, name:)
-        super
+        super()
         @href = href
         @name = name
       end

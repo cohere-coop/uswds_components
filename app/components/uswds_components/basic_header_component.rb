@@ -6,7 +6,7 @@ module UswdsComponents
     renders_many :primary_items, 'PrimaryItem'
 
     def initialize(image_path: '/assets/img')
-      super
+      super()
       @image_path = image_path
     end
 
@@ -18,7 +18,7 @@ module UswdsComponents
       attr_accessor :title, :href
 
       def initialize(title: '', href: '/')
-        super
+        super()
         @title = title
         @href = href
       end
@@ -31,7 +31,7 @@ module UswdsComponents
         'UswdsComponents::BasicHeaderComponent::SubmenuItem'
 
       def initialize(title: '', href: '', current: false)
-        super
+        super()
         @title = title
         @href = href
         @current = current
@@ -53,7 +53,7 @@ module UswdsComponents
       attr_accessor :name, :href
 
       def initialize(name: '', href: '/')
-        super
+        super()
         @name = name
         @href = href
       end

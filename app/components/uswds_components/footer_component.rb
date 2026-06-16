@@ -1,8 +1,6 @@
 module UswdsComponents
   class FooterComponent < ViewComponent::Base
     class SlimFooter < ViewComponent::Base
-      attr_accessor :primary_links, :contact_links, :logo
-
       renders_one :logo, 'UswdsComponents::FooterComponent::Logo'
       renders_many :primary_links,
         'UswdsComponents::FooterComponent::PrimaryLink'
@@ -14,7 +12,7 @@ module UswdsComponents
       attr_accessor :src, :name
 
       def initialize(src:, name:)
-        super
+        super()
         @src = src
         @name = name
       end
@@ -24,7 +22,7 @@ module UswdsComponents
       attr_accessor :href, :name
 
       def initialize(href:, name:)
-        super
+        super()
         @href = href
         @name = name
       end
@@ -34,7 +32,7 @@ module UswdsComponents
       attr_accessor :href, :name
 
       def initialize(href:, name:)
-        super
+        super()
         @href = href
         @name = name
       end

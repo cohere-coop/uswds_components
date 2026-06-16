@@ -5,7 +5,7 @@ module UswdsComponents
 
     def initialize(form_options: { url: '' }, query_param: :q, submit_icon: '',
       size: :default)
-      super
+      super()
       @form_options = form_options
       @query_param = query_param
       @submit_icon = submit_icon

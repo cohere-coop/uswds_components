@@ -3,7 +3,7 @@ module UswdsComponents
     attr_accessor :available_locales
 
     def initialize(available_locales: I18n.locales)
-      super
+      super()
       @available_locales = available_locales
     end
 

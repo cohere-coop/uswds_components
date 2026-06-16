@@ -13,7 +13,7 @@ module UswdsComponents
       attr_accessor :href, :name
 
       def initialize(href:, name:)
-        super
+        super()
         @href = href
         @name = name
       end
