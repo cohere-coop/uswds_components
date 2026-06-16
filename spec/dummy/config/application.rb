@@ -11,11 +11,7 @@ module Dummy
   class Application < Rails::Application
     config.load_defaults Rails::VERSION::STRING.to_f
 
-    config.view_component.default_preview_layout = 'application'
-    config.view_component.show_previews = true
-    # Lookbook doesn't support or need source previews
-    config.view_component.show_previews_source = false
-    config.view_component.preview_paths =
-      [UswdsComponents::Engine.root.join('spec/components/previews')]
+    config.lookbook.preview_paths <<
+      UswdsComponents::Engine.root.join('spec/components/previews')
   end
 end
