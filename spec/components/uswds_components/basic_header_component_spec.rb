@@ -20,6 +20,15 @@ RSpec.describe UswdsComponents::BasicHeaderComponent, type: :component do
     end
   end
 
+  describe UswdsComponents::BasicHeaderComponent::BasicLogo, type: :component do
+    let(:component) { described_class.new(title: "Title", href: "/home") }
+
+    it "links to the href" do
+      render_inline(component)
+      expect(page).to have_link("Title", href: "/home")
+    end
+  end
+
   describe UswdsComponents::BasicHeaderComponent::PrimaryItem,
     type: :component do
     let(:component) { described_class.new(title: "Help", href: '/help') }
