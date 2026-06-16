@@ -27,7 +27,7 @@ RSpec.describe UswdsComponents::SidenavComponent, type: :component do
 
   it "includes the list content" do
     render_component
-    expect(page.find('ul li')).to have_content('an item')
+    expect(page.find('ul li')).to have_text('an item')
   end
 
   describe UswdsComponents::SidenavComponent::Item, type: :component do

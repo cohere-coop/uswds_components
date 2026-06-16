@@ -18,7 +18,7 @@ RSpec.describe UswdsComponents::PaginationComponent, type: :component do
     render_inline(component) do
       "Hello world"
     end
-    expect(page).to have_content("Hello world")
+    expect(page).to have_text("Hello world")
   end
 
   describe UswdsComponents::PaginationComponent::Previous do
@@ -156,7 +156,7 @@ RSpec.describe UswdsComponents::PaginationComponent, type: :component do
     end
 
     it "has an ellipsis" do
-      expect(page).to have_content("…")
+      expect(page).to have_text("…")
     end
   end
 end

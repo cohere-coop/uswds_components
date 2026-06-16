@@ -43,7 +43,7 @@ RSpec.describe UswdsComponents::AlertComponent, type: :component do
 
   it "includes the content" do
     render_component
-    expect(page.find('p.usa-alert__text')).to have_content("Check six")
+    expect(page.find('p.usa-alert__text')).to have_text("Check six")
   end
 
   describe "heading option" do
@@ -72,7 +72,7 @@ RSpec.describe UswdsComponents::AlertComponent, type: :component do
 
       it "includes the heading text" do
         render_component
-        expect(page.find('.usa-alert__heading')).to have_content("Look")
+        expect(page.find('.usa-alert__heading')).to have_text("Look")
       end
     end
   end

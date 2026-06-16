@@ -137,7 +137,7 @@ RSpec.describe UswdsComponents::FooterComponent, type: :component do
 
       it "has the primary links in the list" do
         render_component
-        expect(page.find('ul')).to have_content('primary')
+        expect(page.find('ul')).to have_text('primary')
       end
     end
 
@@ -160,7 +160,7 @@ RSpec.describe UswdsComponents::FooterComponent, type: :component do
       it "contact info in the row" do
         render_component
         expect(page.find('.usa-footer__address > .grid-row'))
-          .to have_content('contact')
+          .to have_text('contact')
       end
     end
 
@@ -182,7 +182,7 @@ RSpec.describe UswdsComponents::FooterComponent, type: :component do
       it "has the logo content" do
         render_component
         expect(page.find('.usa-footer__secondary-section > .grid-container'))
-          .to have_content('logo section')
+          .to have_text('logo section')
       end
     end
   end
@@ -244,7 +244,7 @@ RSpec.describe UswdsComponents::FooterComponent, type: :component do
 
     it "has the name" do
       render_component
-      expect(page.find('.usa-footer__logo-heading')).to have_content('Control')
+      expect(page.find('.usa-footer__logo-heading')).to have_text('Control')
     end
 
     context "when the logo src is blank" do
@@ -306,7 +306,7 @@ RSpec.describe UswdsComponents::FooterComponent, type: :component do
 
     it "has the name" do
       render_component
-      expect(page.find('a')).to have_content('Pag')
+      expect(page.find('a')).to have_text('Pag')
     end
   end
 
@@ -339,7 +339,7 @@ RSpec.describe UswdsComponents::FooterComponent, type: :component do
 
     it "has the name" do
       render_component
-      expect(page.find('a')).to have_content('Call 311')
+      expect(page.find('a')).to have_text('Call 311')
     end
   end
 end
