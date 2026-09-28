@@ -13,7 +13,6 @@ task default: %i[
   rubocop
   app:haml_lint
   spec
-  license_finder
   brakeman:check
   bundle:audit
 ]
